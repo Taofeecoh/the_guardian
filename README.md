@@ -106,4 +106,4 @@ Contributions are welcome! Please submit a pull request with your enhancements.
 
 ## 📄 License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/Taofeecoh/the_guardian/blob/main/LICENSE.md) file for details.
