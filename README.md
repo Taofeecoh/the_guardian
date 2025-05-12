@@ -15,18 +15,17 @@
 
 ## 📃 Contents
 >Installation
-1. Fork the project 🔪
-2. Clone the forked repository 📥
-3. Setup 🔧⚙️
-4. Installing packages required 📦📥
+1. Clone the forked repository 📥
+2. Setup 🔧⚙️
+3. Installing packages required 📦📥
 > Usage
-5. Generate API key
-6. Store environment variables
-7. Execute
+4. Generate API key
+5. Store environment variables
+6. Execute
 
 ## ⚙️ Installation
-1. **Fork the project repository**
-2. **Clone (download) the repository on your local machine:**
+
+1. **Clone (download) the repository on your local machine:**
 
    ```bash
    $ git clone https://github.com/Taofeecoh/the_guardian.git
@@ -38,7 +37,7 @@
    $ cd the_guardian
    ```
 
-3. **Set up a virtual environment (optional but highly recommended):**
+2. **Set up a virtual environment (optional but highly recommended):**
 
    ```bash
    the_guardian$ python -m venv venv
@@ -52,18 +51,18 @@
    venv\Scripts\activate
    ```
 
-4. **Install the required packages:**
+3. **Install the required packages:**
 
    ```bash
    $ pip install -r requirements.txt
    ```
 
 ## 🚀 Usage
-5. **Generate access key**
+4. **Generate access key**
 
 Before running the ```guardian_pipeline.py``` script, we need create a developer account on the guardian open platform [website](https://open-platform.theguardian.com/access/) in order to generate our **API key**.
 
-6. **Store environment variables**
+5. **Store environment variables**
    In the same working directory, create a ```.env``` file.
 
    ```bash
@@ -74,7 +73,7 @@ Before running the ```guardian_pipeline.py``` script, we need create a developer
    GUARDIAN_KEY="<API_key>"
    ```
 
-7. **Execute**
+6. **Execute**
 
 To execute the data pipeline and store in s3 if there is a valid AWS user account:
 
@@ -99,10 +98,17 @@ Else, comment out everything from the session portion of the code downward as de
 #     )
 
 ```
+___
+**Modify query parameter**
 
+The ```search?q=____``` of the query parameters could be modified acording to search of interest. Please check [the guardian](https://open-platform.theguardian.com/documentation/) for more.
+```python
+queries = f"/search?q=<endpoint of interest>&from-date=2025-01-01&api-key={key}"
+```
+___
 ## 🤝 Contributing
 
-Contributions are welcome! Please submit a pull request with your enhancements.
+Contributions are welcome! Please fork the repository and submit a pull request with your enhancements.
 
 ## 📄 License
 
