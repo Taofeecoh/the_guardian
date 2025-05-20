@@ -3,14 +3,15 @@ import logging
 import requests
 
 
-def main_request(baseurl, parameter, page_number=1):
+def main_request(url, page_number=1):
     """
     Function to make a request to the Guardian API and handle pagination.
     :param baseurl: The base URL of the API.
     :param parameter: The endpoint to get info about pagesizes for the request.
     :return: The response in JSON format.
     """
-    response = requests.get(baseurl + parameter + f"&page={page_number}")
+
+    response = requests.get(url + f"&page={page_number}")
     if response.status_code == 200:
         logging.info("Request was successful")
         r = response.json()
