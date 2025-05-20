@@ -1,3 +1,4 @@
 guardian.ipynb
 *env
-__py*
+__pyc**
+admin*
