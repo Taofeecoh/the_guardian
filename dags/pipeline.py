@@ -1,5 +1,4 @@
 import logging
-import os
 from datetime import date, timedelta
 
 import awswrangler as wr
@@ -115,7 +114,6 @@ def to_s3():
 def complete_etl():
     main_request()
     get_pages()
-    extract_page_articles()
     to_dataframe()
     to_s3()
     return "successful!"

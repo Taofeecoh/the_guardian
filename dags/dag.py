@@ -1,17 +1,17 @@
-import utils as ut
+import pipeline as p
 from airflow import DAG
 from airflow.models import Variable
 from airflow.operators.python import PythonOperator
 
 dag = DAG(
-    dag_id='random_user_dag',
-    description='a DAG instance for random users API tasks'
+    dag_id='the-guardian',
+    description='the guardian pipeline'
 )
 
-task_one = PythonOperator(
-    task_id = 'random_user_etl_pipeline',
-    python_callable=ut.pipeline,
+extract_data = PythonOperator(
+    task_id = 'extract_data',
+    python_callable=p.complete_etl,
     dag=dag
     )
 
-task_one
+extract_data
