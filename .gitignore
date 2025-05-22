@@ -2,3 +2,5 @@ guardian.ipynb
 *env
 __pyc**
 admin*
+logs
+config

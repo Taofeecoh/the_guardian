@@ -1,0 +1,6 @@
+__pycache__
+admin*
+*.log*
+config
+.git
+*admin
