@@ -14,7 +14,7 @@ baseurl = "https://content.guardianapis.com"
 searchword = "/search?q=Nigeria"
 from_date = f"&from-date={date.today()}"
 to_date = f"&to-date={date.today()+timedelta(days=1)}"
-key = f"&api-key={os.getenv("GUARDIAN_KEY")}"
+key = f"&api-key={os.getenv("SECRET_API_KEY")}"
 
 endpoint = baseurl+searchword+from_date+to_date+key
 
