@@ -4,3 +4,5 @@ __pyc**
 admin*
 logs
 config
+*.tfstate*
+.terra*
