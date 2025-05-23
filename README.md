@@ -7,14 +7,16 @@
 
 ## 📁 Project Structure
 
-- `guardian_pipeline_v1.py`: First version of pipeline; extracts all data into csv at once.
 - `guardianmodule.py`: Contains utility functions used across the pipeline.
+- `guardian_pipeline_v1.py`: First version of pipeline; extracts all data into csv at once.
+- `guardian_pipeline_v2.py`: Second version of test script; fetches daily data.
 - `guardian_NigerianArticles.csv`: Dataset containing Nigerian news articles.
 - `requirements.txt`: Lists Python dependencies.
-- `Dockerfile`: Configuration for containerizing Airflow
-- `Terraform`: AWS Cloud infrastructure.
+- `Dockerfile`: Configuration for containerizing Airflow.
+- `Terraform`: All files for building AWS infrastructure.
 - `dags/pipeline.py`: Full ETL pipeline from endpoint to S3.
-- `guardian_pipeline_v2.py`: Second version of test script; fetches daily data.
+- `dags/dag.py`: pipeline orcehstration file; _building..._
+
 
 ## 📃 Contents
 > [Installation](#️-installation)
@@ -34,7 +36,7 @@
    $ git clone https://github.com/Taofeecoh/the_guardian.git
    ```
 
-   **Move into the direcctory with the clone repository:**
+   **Move into the direcctory with the cloned repository:**
 
    ```
    $ cd the_guardian
