@@ -1,7 +1,11 @@
 # Hola Open Source Enthusiast!👋
 # 📰 the_guardian
 
-**the_guardian** is a Python-based data pipeline designed to fetch and process Nigerian news articles from The Guardian. It includes modules for data ingestion, transformation, and storage.
+**theguardian** is an end-to-end ETL pipeline built to collect, process, and store Nigerian news articles from The Guardian Open Platform. The pipeline begins with a Python script that extracts article data from The Guardian API and loads it into an Amazon S3 data lake.
+
+To enable better scheduling, the ETL process has been containerized and integrated with Apache Airflow, running in a Docker environment.
+
+The infrastructure supporting this pipeline is being provisioned using Terraform on AWS, ensuring consistent and version-controlled deployment. Key components of the infrastructure include a custom VPC and EC2 instance, with plans to incorporate Amazon RDS (PostgreSQL) as the final destination for transformed and structured data. This will support downstream analytics and querying use cases.
 
 📌 Tech Stack used: Python Libraries & Custom Modules, Third Party API, GIT, VS Code, Terraform, AWS, Docker, Airflow
 
