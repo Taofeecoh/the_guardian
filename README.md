@@ -3,22 +3,25 @@
 
 **the_guardian** is a Python-based data pipeline designed to fetch and process Nigerian news articles from The Guardian. It includes modules for data ingestion, transformation, and storage.
 
-📌 Tech Stack used: Python 3.12, Libraries & Modules, Third Party API, GIT, VS Code
+📌 Tech Stack used: Python Libraries & Custom Modules, Third Party API, GIT, VS Code, Terraform, AWS, Docker, Airflow
 
 ## 📁 Project Structure
 
-- `guardian_pipeline.py`: Main script orchestrating the data pipeline.
+- `guardian_pipeline_v1.py`: First version of pipeline; extracts all data into csv at once.
 - `guardianmodule.py`: Contains utility functions used across the pipeline.
 - `guardian_NigerianArticles.csv`: Dataset containing Nigerian news articles.
 - `requirements.txt`: Lists Python dependencies.
-- `Dockerfile`: Configuration for containerizing the application.
+- `Dockerfile`: Configuration for containerizing Airflow
+- `Terraform`: AWS Cloud infrastructure.
+- `dags/pipeline.py`: Full ETL pipeline from endpoint to S3.
+- `guardian_pipeline_v2.py`: Second version of test script; fetches daily data.
 
 ## 📃 Contents
->Installation
+> [Installation](#️-installation)
 1. Clone the forked repository 📥
 2. Setup 🔧⚙️
 3. Installing packages required 📦📥
-> Usage
+> [Usage](#-usage)
 4. Generate API key
 5. Store environment variables
 6. Execute
