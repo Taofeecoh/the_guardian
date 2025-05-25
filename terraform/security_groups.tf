@@ -63,7 +63,7 @@ resource "aws_vpc_security_group_ingress_rule" "private_SG_ingress_1" {
 resource "aws_vpc_security_group_egress_rule" "private_SG_egress_1" {
   security_group_id = aws_security_group.private_SG.id
 
-  cidr_ipv4   = "104.20.00/16"
+  cidr_ipv4   = "104.20.0.0/16"
   ip_protocol = "tcp"
   from_port   = 22
   to_port     = 22
