@@ -30,8 +30,8 @@ resource "aws_vpc_security_group_ingress_rule" "public_SG_ingress_2" {
   to_port     = 443
 }
 
-# Inbound rule2
-resource "aws_vpc_security_group_ingress_rule" "public_SG_ingress_2" {
+# Inbound rule3
+resource "aws_vpc_security_group_ingress_rule" "public_SG_ingress_3" {
   security_group_id = aws_security_group.public_SG.id
 
   cidr_ipv4   = "0.0.0.0/0"
@@ -40,8 +40,8 @@ resource "aws_vpc_security_group_ingress_rule" "public_SG_ingress_2" {
   to_port     = 8080
 }
 
-# Inbound rule2
-resource "aws_vpc_security_group_ingress_rule" "public_SG_ingress_2" {
+# Inbound rule4
+resource "aws_vpc_security_group_ingress_rule" "public_SG_ingress_4" {
   security_group_id = aws_security_group.public_SG.id
 
   cidr_ipv4   = "0.0.0.0/0"
