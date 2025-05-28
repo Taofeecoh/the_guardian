@@ -21,8 +21,7 @@ dag = DAG(
     dag_id='the-guardian',
     description='dag that runs a pipeline at 6:30am, 6:30pm, and 11:30pm',
     default_args=default_args,
-    schedule_interval='30 6,18,23 * * *',
-    #dagrun_timeout=timedelta(minutes=5.0)
+    schedule_interval='30 5,17,22 * * *'
 )
 
 extract_data = PythonOperator(
