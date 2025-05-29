@@ -8,7 +8,7 @@ from airflow.operators.python import PythonOperator
 default_args = {
     'owner': 'taofeecoh',
     'depends_on_past': False,
-    'start_date': datetime(2025, 5, 27),
+    'start_date': datetime.now() - timedelta(days=1),
     'email': ['adesanutaofeecoh@gmail.com'],
     'email_on_failure': True,
     'email_on_retry': True,
