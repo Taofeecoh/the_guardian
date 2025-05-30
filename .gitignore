@@ -4,5 +4,5 @@ __pyc**
 admin*
 logs
 config
-*terraform*
+.terraform*
 *datasource*
